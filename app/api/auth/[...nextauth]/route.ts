@@ -8,11 +8,12 @@ import GoogleProvider from "next-auth/providers/google";
 const authOptions = {
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID!,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+      clientId: '251261460194-10vpm5o5gnj9fon8p75s9k3arp83vf9r.apps.googleusercontent.com',
+      clientSecret: "9273b859674609e33653cda5e4b0a13e0ad9adb52eff22f207bfeed405d25816",
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
+
 };
 export async function GET(req: NextApiRequest, res: NextApiResponse) {
   return NextAuth(req, res, authOptions);
