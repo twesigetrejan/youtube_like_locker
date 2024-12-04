@@ -20,7 +20,7 @@ export default function LikedVideos(){
 
     return (
         <div className="text-center">
-            <h1>Welcome, {session.user?.name}, enjoy your videos</h1>
+            <h1>Welcome {session.user?.name}, enjoy your videos</h1>
             {/* video component here */}
             <button onClick={() => signOut()} className="mt-4 p-2 border-2">Sign Out</button>
         </div>
